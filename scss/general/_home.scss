@@ -1,0 +1,25 @@
+//import variables
+@import "./utilidades/variables";
+//import mixin
+@import "./utilidades/mixin";
+
+/* estilos para mobile*/
+/* estilos de header*/
+header{
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+ nav{ 
+    ul{
+    list-style: none;
+    color:$color-principal;
+    display: flex;
+    gap: 1rem;
+}
+}
+
+main{
+    @include grid(grid, 2fr,repeat(2,30%));
+    align-content: center;
+}

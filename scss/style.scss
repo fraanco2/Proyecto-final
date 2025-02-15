@@ -1,0 +1,26 @@
+//import de reset
+@import "./general/reset";
+//import de home
+@import "./general/home";
+
+// import de archivos de variables
+@import "./utilidades/variables";
+
+//nesting
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: $color-principal;
+    img{
+        width:50% ;
+    }
+    nav{
+        ul{
+        list-style: none;
+        background-color: $color-principal;
+        gap: 1rem;
+    }
+}
+}
