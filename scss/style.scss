@@ -1,26 +1,12 @@
 //import de reset
-@import "./general/reset";
+@import "general/reset";
+
 //import de home
-@import "./general/home";
+@import "general/home";
 
-// import de archivos de variables
-@import "./utilidades/variables";
+//import de mdq-desktop
 
-//nesting
+@import "general/mdq-desktop";
 
-header{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    background-color: $color-principal;
-    img{
-        width:50% ;
-    }
-    nav{
-        ul{
-        list-style: none;
-        background-color: $color-principal;
-        gap: 1rem;
-    }
-}
-}
+//import de mdq-tablet
+@import "general/mdq-tablet";

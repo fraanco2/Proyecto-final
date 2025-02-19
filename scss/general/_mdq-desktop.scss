@@ -1,0 +1,45 @@
+//import variables
+@import "../utilidades/variables";
+@import"../utilidades/mixin";
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(50% 50%);
+        column-gap: 1rem;
+    }
+
+    main div img {
+        display: block;
+    }
+
+
+
+    /* estilos de header*/
+    header nav ul {
+        background-color: aliceblue;
+        gap: 30px;
+        flex-wrap: wrap;
+
+
+
+
+    }
+
+    header div nav ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+
+}

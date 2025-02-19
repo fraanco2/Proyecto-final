@@ -1,18 +1,99 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "./utilidades/variables";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\general\_reset.scss 2:9  @import
- *   scss\style.scss 2:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"./utilidades/variables\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\general\\_reset.scss 2:9  @import\a   scss\\style.scss 2:9           root stylesheet";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* estilos para mobile*/
+/* estilos de header*/
+body {
+  background-color: #F1E3D3;
+  color: #F1E3D3;
+}
+
+h1 {
+  color: #27445D;
+}
+
+header {
+  display: flex align-items center;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  color: #F1E3D3;
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(2, 30%);
+  align-content: center;
+}
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+}
+
+body {
+  background-color: #F1E3D3;
+  color: #F1E3D3;
+}
+
+h1 {
+  color: #27445D;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(50% 50%);
+    column-gap: 1rem;
+  }
+  main div img {
+    display: block;
+  }
+  /* estilos de header*/
+  header nav ul {
+    background-color: aliceblue;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  header div nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  main {
+    display: flex;
+    align-items: center;
+  }
+}
+body {
+  background-color: #F1E3D3;
+  color: #F1E3D3;
+}
+
+h1 {
+  color: #27445D;
+}
+
+@media screen and (min-width: 675px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(50% 50%);
+    column-gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

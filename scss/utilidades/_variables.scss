@@ -1,7 +1,14 @@
 //paleta de colores
-$color-principal:aliceblue; 
-$color-bg:aliceblue; 
+$color-primary:#F1E3D3 ;
+$color-secondary:#F1E3D3;
+$color-tertiary:#27445D;
 
+// Usar las variables en tu código
+body {
+  background-color: $color-secondary;
+  color: $color-primary;
+}
 
-
-//medidas
+h1 {
+  color: $color-tertiary;
+}
