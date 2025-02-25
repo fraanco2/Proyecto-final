@@ -1,14 +1,16 @@
 //paleta de colores
 $color-primary:#F1E3D3 ;
-$color-secondary:#F1E3D3;
+$color-secondary:#000000;
 $color-tertiary:#27445D;
 
 // Usar las variables en tu código
 body {
-  background-color: $color-secondary;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-secondary;
 }
 
 h1 {
   color: $color-tertiary;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
